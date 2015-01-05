@@ -289,6 +289,8 @@ body {
 
 h2 {
   margin: 10px 0 20px; }
+  h2 a {
+    color: white; }
 
 .box {
   background-color: #111;
