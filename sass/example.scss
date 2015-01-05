@@ -1,0 +1,18 @@
+@import "conflexgrids";
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial;
+  margin: 0;
+  padding: 10px 40px;
+}
+
+h2 {
+  margin: 10px 0 $grid-margin;
+}
+
+.box {
+  background-color: #111;
+  border: 1px solid white;
+}
