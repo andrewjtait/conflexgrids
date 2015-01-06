@@ -1,26 +1,23 @@
 $grid-margin: 20px !default;
 $max-columns: 12 !default;
 
-.row {
+.column-set {
   clear: both;
-  left: -($grid-margin);
-  margin-right: -($grid-margin);
+  margin-left: -($grid-margin);
   position: relative;
 
-  .column {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+  .column-container {
     box-sizing: border-box;
     float: left;
-    padding: 0 0 $grid-margin $grid-margin;
+    padding-left: $grid-margin;
     width: 100%;
   }
 
   @for $i from 2 through $max-columns {
     $width: 100% / $i;
 
-    &.column-#{$i} {
-      > .column {
+    &.columns-#{$i} {
+      .column-container {
         width: $width;
       }
 

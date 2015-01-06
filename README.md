@@ -24,24 +24,40 @@ You can configure the max number of columns you can use by setting the `$max-col
 
 ### Constructing a grid in your HTML
 
-You can construct rows and columns with some simple HTML:
+You can construct rows and columns with some simple HTML (the `.row` and `.column` divs are optional):
 
 ```html
-<div class="row column-2">
-  <div class="column">...</div>
-  <div class="column">...</div>
+<div class="row">
+  <div class="column-set columns-2">
+    <div class="column-container">
+      <div class="column">...</div>
+    </div>
+    <div class="column-container">
+      <div class="column">...</div>
+    </div>
+  </div>
 </div>
 ```
+
+The HTML is constructed with a `column-set` which contains all of the columns and a `column-container` which contains a single column. Having these allow you to apply custom styling to `.row` and `.column` (background-color, padding, borders etc) without affecting the grid layout.
 
 #### Span columns
 
 A column can span the width of multiple columns with an additional class:
 
 ```html
-<div class="row column-4">
-  <div class="column span-2">...</div>
-  <div class="column">...</div>
-  <div class="column">...</div>
+<div class="row">
+  <div class="column-set columns-4">
+    <div class="column-container span-2">
+      <div class="column">...</div>
+    </div>
+    <div class="column-container">
+      <div class="column">...</div>
+    </div>
+    <div class="column-container">
+      <div class="column">...</div>
+    </div>
+  </div>
 </div>
 ```
 
@@ -50,8 +66,14 @@ A column can span the width of multiple columns with an additional class:
 A column can be offset (skipping a number of columns) with an additional class:
 
 ```html
-<div class="row column-6">
-  <div class="column offset-4">...</div>
-  <div class="column">...</div>
+<div class="row">
+  <div class="column-set columns-6">
+    <div class="column-container offset-4">
+      <div class="column">...</div>
+    </div>
+    <div class="column-container">
+      <div class="column">...</div>
+    </div>
+  </div>
 </div>
 ```
