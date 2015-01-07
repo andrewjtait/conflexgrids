@@ -33,7 +33,7 @@ You can construct a grid with some simple HTML. A `column-set` contains all of t
 </div>
 ```
 
-Adding `.row` and `.column` divs allow you to apply custom styling (background-color, padding, borders etc) without affecting the grid layout:
+OPTIONAL: Adding `.row` and `.column` divs allow you to apply custom styling (background-color, padding, borders etc) without affecting the grid layout:
 
 ```html
 <div class="row">
