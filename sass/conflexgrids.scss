@@ -17,14 +17,14 @@ $max-columns: 12 !default;
     $width: 100% / $i;
 
     &.columns-#{$i} {
-      .column-container {
+      > .column-container {
         width: $width;
       }
 
       // span columns:
       @for $y from 2 through $i {
         @if $y != $i {
-          .span-#{$y} {
+          > .span-#{$y} {
             width: (100% / $i) * $y;
           }
         }
@@ -33,7 +33,7 @@ $max-columns: 12 !default;
       // offset columns:
       @for $y from 1 through $i {
         @if $y != $i {
-          .offset-#{$y} {
+          > .offset-#{$y} {
             margin-left: $width * $y;
           }
         }
