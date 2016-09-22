@@ -6,7 +6,7 @@ Set any margin you want to use, and the columns in the grid will flex to the siz
 
 ## Example
 
-[View a demo](http://www.andrewjamestait.co.uk/conflexgrids/).
+[View a demo](http://andrewjtait.github.io/conflexgrids/).
 
 ## How to use it
 
